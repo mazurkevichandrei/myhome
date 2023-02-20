@@ -13,7 +13,7 @@ return(
         <StyledBuildingInfoArea>
             <StyledBuilbingData type='titleEn'>Buenos-Aires</StyledBuilbingData>
             <StyledBuilbingData type='titleRus'>Буэнос-Айрес</StyledBuilbingData>
-            <StyledBuilbingData type='address'>Минск, ул.Игоря лученка, 27</StyledBuilbingData>
+            <StyledBuilbingData type='address'>Минск, ул.Игоря Лученка, 27</StyledBuilbingData>
         </StyledBuildingInfoArea>
     </StyledHeader>
 )
