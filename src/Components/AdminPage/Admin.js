@@ -1,10 +1,15 @@
 import React from "react";
 
 import StyledBuilbingData from "../Header/styledHeaderConponents/StyledBuilbingData";
+import StyledPageCommon from "../StyledCommon/StyledPageContainer";
+import StyledAddHouseBtn from "./Styled/StyledAddHouseBtn";
 
 const Admin = () => {
     return(
-        <StyledBuilbingData>Admin Page</StyledBuilbingData>
+        <StyledPageCommon>
+            <StyledAddHouseBtn>CREATE HOUSE</StyledAddHouseBtn>
+        </StyledPageCommon>
+        
     )
 }
 
