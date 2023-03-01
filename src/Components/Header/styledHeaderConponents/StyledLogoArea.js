@@ -12,6 +12,7 @@ const StyledLogoArea = styled.div`
     color: orange;
     padding-bottom: 1px;
     box-sizing: border-box;
+    font-size: 18px;
 `;
 
 export default StyledLogoArea;
