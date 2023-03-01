@@ -8,6 +8,7 @@ const StyledAddHouseBtn = styled.button`
     cursor: pointer;
     box-sizing: border-box;
     color: grey;
+    // z-index: 1;
 `;
 
 export default StyledAddHouseBtn;

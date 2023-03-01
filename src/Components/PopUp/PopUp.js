@@ -1,8 +1,10 @@
 import React, {useState,useEffect,useRef} from "react";
 
 //Components
+import StyledPopUpArea from "./Styled/StyledPopUpArea";
 import StyledPopUp from "./Styled/StyledPopUp";
-import StyledCloseBtn from "./Styled/StyledCloswBtn";
+import StyledBtnArea from "./Styled/StyledBtnArea";
+import StyledCloseBtn from "./Styled/StyledCloseBtn";
 
 const PopUp = ({isVisible,setPopUpVisible,calcWidth}) => {
 
@@ -22,7 +24,12 @@ const PopUp = ({isVisible,setPopUpVisible,calcWidth}) => {
 
     return(
         <StyledPopUp ref={ref2} isVisible={isVisible} calcWidth={calcWidth}>
-            <StyledCloseBtn onClick={()=>closePopUp()}>Cancel</StyledCloseBtn>
+            <StyledPopUpArea>
+                <StyledBtnArea>
+                    <StyledCloseBtn onClick={()=>closePopUp()}>Cancel</StyledCloseBtn>
+                    <StyledCloseBtn isSave >Save</StyledCloseBtn>
+                </StyledBtnArea>
+            </StyledPopUpArea>
         </StyledPopUp>
     )
 };

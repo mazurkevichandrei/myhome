@@ -15,9 +15,7 @@ const Admin = () => {
 
     const createHouse = (e) => {
         console.log('Create')
-        setPopUpVisible(!popUpVisible)
-        // e.stopPropagation()
-        
+        setPopUpVisible(!popUpVisible)      
     }
 
     const editHouse = () => {
@@ -33,13 +31,6 @@ const Admin = () => {
         setCalcWidth(ref1.current.offsetWidth)
         console.log(11)
       }, [window.innerWidth]);
-
-    //   const res = () => {
-    //     console.log(ref1.current.offsetWidth)
-    //     // setCalcWidth(ref1.current.offsetWidth)
-    //   }
-
-    //   window.addEventListener('resize', res)
 
     return(
         <StyledPageCommon>
