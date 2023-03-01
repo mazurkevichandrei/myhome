@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-const activeClassName = "active";
+const activelassname = "active";
 
-const StyledLink = styled(NavLink).attrs({ activeClassName })`
+const StyledLink = styled(NavLink).attrs({ activelassname })`
     text-decoration: none;
     color: grey;
     opacity: .5;
     &:hover{
         opacity: .8;
         }
-    &.${activeClassName}  {
+    &.${activelassname}  {
         opacity: 1;
         }
   `;

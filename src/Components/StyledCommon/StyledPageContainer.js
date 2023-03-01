@@ -6,6 +6,7 @@ const StyledPageCommon = styled.div`
     border: 1px solid orange;
     padding: 10px;
     box-sizing: border-box;
+    position: relative;
 `
 
 export default StyledPageCommon;

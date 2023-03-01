@@ -1,13 +1,50 @@
-import React from "react";
+import React, {useState, useRef, useEffect} from "react";
 
-import StyledBuilbingData from "../Header/styledHeaderConponents/StyledBuilbingData";
+//Components
 import StyledPageCommon from "../StyledCommon/StyledPageContainer";
 import StyledAddHouseBtn from "./Styled/StyledAddHouseBtn";
+import PopUp from "../PopUp/PopUp";
 
 const Admin = () => {
+    const [popUpVisible, setPopUpVisible] = useState(false)
+
+    let btnName = ''
+    const isHouseExist = 0
+
+    isHouseExist === 0 ? btnName='CREATE HOUSE' : btnName='EDIT HOUSE';
+
+    const createHouse = (e) => {
+        console.log('Create')
+        setPopUpVisible(!popUpVisible)
+        // e.stopPropagation()
+        
+    }
+
+    const editHouse = () => {
+        console.log('Edit')
+    }
+
+    const createBtnAction = isHouseExist === 0 ? createHouse : editHouse
+
+
+    const ref1 = useRef(null);
+    const [calcWidth, setCalcWidth] = useState(0)
+    useEffect(() => {
+        setCalcWidth(ref1.current.offsetWidth)
+        console.log(11)
+      }, [window.innerWidth]);
+
+    //   const res = () => {
+    //     console.log(ref1.current.offsetWidth)
+    //     // setCalcWidth(ref1.current.offsetWidth)
+    //   }
+
+    //   window.addEventListener('resize', res)
+
     return(
         <StyledPageCommon>
-            <StyledAddHouseBtn>CREATE HOUSE</StyledAddHouseBtn>
+            <PopUp isVisible={popUpVisible} setPopUpVisible={setPopUpVisible} calcWidth={calcWidth}  />
+            <StyledAddHouseBtn ref={ref1} onClick={()=>createBtnAction()}>{`${btnName}`}</StyledAddHouseBtn>
         </StyledPageCommon>
         
     )

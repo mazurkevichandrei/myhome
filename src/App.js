@@ -14,13 +14,13 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <container className="App-body">
+      <div className="App-body">
           <Header />
           <Routes>
             <Route path='/' element={<House />}/>
             <Route path='/admin' element={<Admin />}/>
           </Routes>
-      </container>
+      </div>
     </div>
     </Router>
   );
