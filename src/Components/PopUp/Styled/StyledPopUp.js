@@ -9,7 +9,7 @@ const StyledPopUp = styled.div`
     padding: 0 10px;
     opacity: 0;
     position: absolute;
-    height: 350px;
+    // height: 350px;
     width: 100%;
     left: 50%;
     transform: translate(-50%);

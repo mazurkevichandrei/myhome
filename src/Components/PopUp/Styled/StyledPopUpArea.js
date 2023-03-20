@@ -4,7 +4,8 @@ const StyledPopUpArea = styled.div`
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-start;
     background: #efefef;
     // height: 100px;
     border-radius: 10px;
